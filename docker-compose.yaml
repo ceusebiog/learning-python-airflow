@@ -60,18 +60,26 @@ x-airflow-common:
     postgres:
       condition: service_healthy
 
+x-env-postgres:
+  &env-postgres
+  POSTGRES_USER: ${POSTGRES_USER:-airflow}
+  POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-airflow}
+  POSTGRES_DB: ${POSTGRES_DB:-airflow}
+  
+
 services:
   postgres:
     image: postgres:13
+    container_name: postgres-db
     environment:
-      POSTGRES_USER: ${POSTGRES_USER:-airflow}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-airflow}
-      POSTGRES_DB: ${POSTGRES_DB:-airflow}
+      <<: *env-postgres
     volumes:
       - ./postgresql/init.sql:/docker-entrypoint-initdb.d/db.sql
       - ./postgresql/data:/var/lib/postgresql/data
+    ports:
+      - "${POSTGRES_PORT:-5432}:${POSTGRES_PORT:-5432}"
     healthcheck:
-      test: ["CMD", "pg_isready", "-U", "airflow"]
+      test: ["CMD", "pg_isready", "-d", "${POSTGRES_DB:-airflow}", "-U", "${POSTGRES_USER:-airflow}"]
       interval: 10s
       retries: 5
       start_period: 5s
@@ -89,17 +97,21 @@ services:
       start_period: 30s
     restart: always
 
-  # python-app:
-  #   build:
-  #     context: ./python
-  #   container_name: python-app
-  #   depends_on:
-  #     - postgres
-  #   volumes:
-  #     - ./python:/app
-  #   command: python3 /app/app.py
-  #   links:
-  #     - postgres
+  python-app:
+    build:
+      context: ./python
+    container_name: python-app
+    depends_on:
+      <<: *airflow-common-depends-on
+    volumes:
+      - ./python:/app
+    command: python3 /app/app.py
+    links:
+      - postgres
+    environment:
+      <<: *env-postgres
+      POSTGRES_HOST: ${POSTGRES_HOST:-postgres}
+      POSTGRES_PORT: ${POSTGRES_PORT:-5432}
 
   airflow-webserver:
     <<: *airflow-common
