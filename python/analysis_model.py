@@ -1,12 +1,11 @@
 import pandas as pd
 import numpy as np
 
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import RandomForestClassifier, StackingClassifier, GradientBoostingClassifier
+from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report
-from sklearn.model_selection import cross_val_score
-from sklearn.model_selection import GridSearchCV
-from sklearn.model_selection import train_test_split
-from sklearn.model_selection import RandomizedSearchCV
+from sklearn.model_selection import cross_val_score, GridSearchCV, train_test_split, RandomizedSearchCV
+from sklearn.svm import SVC
 
 from imblearn.over_sampling import SMOTE
 
@@ -137,6 +136,44 @@ def test_model(test_df, model):
     print("Evaluación del modelo en el dataset independiente:")
     print(classification_report(y_test, y_pred))
 
+"""Función para implementar un modelo de stacking."""
+def stacking_model(df):
+  X = df[['amount', 'transaction_type_encoded', 'is_night']]
+  y = df['is_fraud']
+  
+  # Dividir en entrenamiento y prueba
+  X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+  
+  # Definir los modelos base
+  estimators = [
+    ('rf', RandomForestClassifier(n_estimators=100, random_state=42)),
+    ('gb', GradientBoostingClassifier(n_estimators=100, random_state=42)),
+    ('svc', SVC(probability=True, random_state=42))
+  ]
+  
+  # Definir el modelo de stacking con Logistic Regression como meta-modelo
+  stacking_clf = StackingClassifier(
+    estimators=estimators,
+    final_estimator=LogisticRegression(),
+    cv=5,
+    n_jobs=-1
+  )
+  
+  # Entrenar el modelo
+  stacking_clf.fit(X_train, y_train)
+  
+  # Evaluar el modelo
+  print("Evaluación en conjunto de prueba:")
+  test_model_evaluation(X_test, y_test, stacking_clf)
+  
+  return stacking_clf
+
+"""Función para evaluar el modelo en el conjunto de prueba."""
+def test_model_evaluation(X_test, y_test, model):
+  from sklearn.metrics import classification_report
+  y_pred = model.predict(X_test)
+  print(classification_report(y_test, y_pred))
+
 if __name__ == '__main__':
   file_path_train = '/app/transactions_train.csv'
   file_path_test = '/app/transactions_test.csv'
@@ -147,8 +184,12 @@ if __name__ == '__main__':
 
   # model = train_model(df)
 
-  tune_model = fine_tune_model(df)
+  # tune_model = fine_tune_model(df)
+
+  stacking_clf = stacking_model(df)
 
   test_df = prepare_dataset(file_path_test)
 
-  test_model(test_df, tune_model)
+  # test_model(test_df, tune_model)
+
+  test_model_evaluation(test_df[['amount', 'transaction_type_encoded', 'is_night']], test_df['is_fraud'], stacking_clf)
