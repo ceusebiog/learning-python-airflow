@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-from sklearn.ensemble import RandomForestClassifier, StackingClassifier, GradientBoostingClassifier
+from sklearn.ensemble import RandomForestClassifier, StackingClassifier, GradientBoostingClassifier, VotingClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report
 from sklearn.model_selection import cross_val_score, GridSearchCV, train_test_split, RandomizedSearchCV
@@ -123,18 +123,18 @@ def fine_tune_model(df):
   print(f"Mejores parámetros: {random_search.best_params_}")
   return random_search.best_estimator_
 
-"""Función para probar el modelo con un conjunto de datos independiente."""
-def test_model(test_df, model):
-    # Seleccionar las características del dataset de prueba
-    X_test = test_df[['amount', 'transaction_type_encoded', 'is_night']]
-    y_test = test_df['is_fraud']
-    
-    # Hacer predicciones con el modelo entrenado
-    y_pred = model.predict(X_test)
-    
-    # Imprimir el reporte de clasificación para evaluar el rendimiento
-    print("Evaluación del modelo en el dataset independiente:")
-    print(classification_report(y_test, y_pred))
+"""Función para evaluar el modelo en el conjunto de prueba."""
+def test_model_evaluation(test_df, model):
+  # Seleccionar las características del dataset de prueba
+  X_test = test_df[['amount', 'transaction_type_encoded', 'is_night']]
+  y_test = test_df['is_fraud']
+  
+  # Hacer predicciones con el modelo entrenado
+  y_pred = model.predict(X_test)
+  
+  # Imprimir el reporte de clasificación para evaluar el rendimiento
+  print("Evaluación del modelo en el dataset independiente:")
+  print(classification_report(y_test, y_pred))
 
 """Función para implementar un modelo de stacking."""
 def stacking_model(df):
@@ -168,11 +168,33 @@ def stacking_model(df):
   
   return stacking_clf
 
-"""Función para evaluar el modelo en el conjunto de prueba."""
-def test_model_evaluation(X_test, y_test, model):
-  from sklearn.metrics import classification_report
-  y_pred = model.predict(X_test)
-  print(classification_report(y_test, y_pred))
+"""Función para implementar un Voting Classifier."""
+def voting_model(df):
+  X = df[['amount', 'transaction_type_encoded', 'is_night']]
+  y = df['is_fraud']
+  
+  # Dividir en entrenamiento y prueba
+  X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+  
+  # Definir los modelos base
+  clf1 = RandomForestClassifier(n_estimators=100, random_state=42)
+  clf2 = GradientBoostingClassifier(n_estimators=100, random_state=42)
+  clf3 = LogisticRegression(max_iter=1000)
+  
+  # Crear el Voting Classifier
+  voting_clf = VotingClassifier(
+    estimators=[('rf', clf1), ('gb', clf2), ('lr', clf3)],
+    voting='soft'  # Usa 'soft' para promediar las probabilidades
+  )
+  
+  # Entrenar el modelo
+  voting_clf.fit(X_train, y_train)
+  
+  # Evaluar el modelo
+  print("Evaluación en conjunto de prueba:")
+  test_model_evaluation(X_test, y_test, voting_clf)
+  
+  return voting_clf
 
 if __name__ == '__main__':
   file_path_train = '/app/transactions_train.csv'
@@ -186,10 +208,13 @@ if __name__ == '__main__':
 
   # tune_model = fine_tune_model(df)
 
-  stacking_clf = stacking_model(df)
+  # stacking_clf = stacking_model(df)
+
+  # Entrenar y evaluar el modelo de voting
+  voting_clf = voting_model(df)
 
   test_df = prepare_dataset(file_path_test)
 
   # test_model(test_df, tune_model)
 
-  test_model_evaluation(test_df[['amount', 'transaction_type_encoded', 'is_night']], test_df['is_fraud'], stacking_clf)
+  test_model_evaluation(test_df, voting_clf)
