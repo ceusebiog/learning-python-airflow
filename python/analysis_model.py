@@ -6,6 +6,7 @@ from sklearn.metrics import classification_report
 from sklearn.model_selection import cross_val_score
 from sklearn.model_selection import GridSearchCV
 from sklearn.model_selection import train_test_split
+from sklearn.model_selection import RandomizedSearchCV
 
 from imblearn.over_sampling import SMOTE
 
@@ -89,6 +90,40 @@ def tune_model(X_train, y_train):
   print("Mejores parámetros:", grid_search.best_params_)
   return grid_search.best_estimator_
 
+"""Función para realizar el ajuste fino del modelo."""
+def fine_tune_model(df):
+  X = df[['amount', 'transaction_type_encoded', 'is_night']]
+  y = df['is_fraud']
+  
+  # Definir el modelo base
+  model = RandomForestClassifier(random_state=42)
+  
+  # Definir los hiperparámetros para la búsqueda aleatoria
+  param_dist = {
+    'n_estimators': [50, 100, 150, 200],
+    'max_depth': [None, 10, 20, 30, 40],
+    'min_samples_split': [2, 5, 10],
+    'min_samples_leaf': [1, 2, 4],
+    'max_features': ['auto', 'sqrt', 'log2']
+  }
+  
+  # Configurar RandomizedSearchCV
+  random_search = RandomizedSearchCV(
+    model, 
+    param_distributions=param_dist,
+    n_iter=100,
+    scoring='f1',
+    cv=5,
+    random_state=42,
+    n_jobs=-1
+  )
+  
+  # Ajustar el modelo
+  random_search.fit(X, y)
+  
+  print(f"Mejores parámetros: {random_search.best_params_}")
+  return random_search.best_estimator_
+
 """Función para probar el modelo con un conjunto de datos independiente."""
 def test_model(test_df, model):
     # Seleccionar las características del dataset de prueba
@@ -108,10 +143,12 @@ if __name__ == '__main__':
 
   df = prepare_dataset(file_path_train)
 
-  validate_model(df)
+  # validate_model(df)
 
-  model = train_model(df)
+  # model = train_model(df)
+
+  tune_model = fine_tune_model(df)
 
   test_df = prepare_dataset(file_path_test)
 
-  test_model(test_df, model)
+  test_model(test_df, tune_model)
