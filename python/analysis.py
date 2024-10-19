@@ -6,6 +6,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import GridSearchCV
+from imblearn.over_sampling import SMOTE
 
 DB_USER = os.getenv('POSTGRES_USER', 'user')
 DB_PASSWORD = os.getenv('POSTGRES_PASSWORD', 'password')
@@ -40,8 +41,12 @@ def train_model(df):
   # Dividir el dataset en entrenamiento y prueba
   X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
   
+  # Aplicar SMOTE para balancear las clases
+  smote = SMOTE(random_state=42)
+  X_train_balanced, y_train_balanced = smote.fit_resample(X_train, y_train)
+
   # Afinar el modelo con GridSearchCV
-  model = tune_model(X_train, y_train)
+  model = tune_model(X_train_balanced, y_train_balanced)
   
   # Hacer predicciones
   y_pred = model.predict(X_test)
