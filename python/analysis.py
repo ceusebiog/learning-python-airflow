@@ -2,6 +2,10 @@ import pandas as pd
 from sqlalchemy import create_engine
 import os
 
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.metrics import classification_report
+
 DB_USER = os.getenv('POSTGRES_USER', 'user')
 DB_PASSWORD = os.getenv('POSTGRES_PASSWORD', 'password')
 DB_HOST = os.getenv('POSTGRES_HOST', 'postgres')
@@ -10,21 +14,6 @@ DB_NAME = os.getenv('POSTGRES_DB', 'bank_db')
 
 DATABASE_URL = f'postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}'
 engine = create_engine(DATABASE_URL)
-
-"""Función para analizar transacciones y detectar patrones sospechosos."""
-def analyze_transactions():
-  query = "SELECT * FROM transactions;"
-  df = pd.read_sql(query, con=engine)
-  
-  # Análisis básico
-  print("Resumen de transacciones:")
-  print(df.describe())
-
-  # Análisis de transacciones inusuales
-  suspicious_transactions = df[(df['amount'] < -1000) | (df['amount'] > 10000)]
-  if not suspicious_transactions.empty:
-    print("Transacciones sospechosas:")
-    print(suspicious_transactions)
 
 """Función para preparar el conjunto de datos para entrenamiento."""
 def prepare_dataset():
@@ -37,6 +26,25 @@ def prepare_dataset():
     
     return df
 
+"""Función para entrenar un modelo de clasificación de fraude."""
+def train_model(df):
+    # Seleccionar las características y la variable objetivo
+    X = df[['amount']]
+    y = df['is_fraud']
+    
+    # Dividir el dataset en entrenamiento y prueba
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+    
+    # Entrenar un modelo de árbol de decisión
+    model = DecisionTreeClassifier()
+    model.fit(X_train, y_train)
+    
+    # Hacer predicciones
+    y_pred = model.predict(X_test)
+    print(classification_report(y_test, y_pred))
+    
+    return model
+
 if __name__ == '__main__':
     df = prepare_dataset()
-    print(df.sort_values(by=['is_fraud'], ascending=False).head())
+    model = train_model(df)
