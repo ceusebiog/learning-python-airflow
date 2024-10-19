@@ -1,3 +1,4 @@
 postgresql/data
 airflow/logs
 .env
+airflow/dags/__pycache__

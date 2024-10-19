@@ -11,8 +11,8 @@ DB_NAME = os.getenv('POSTGRES_DB', 'bank_db')
 DATABASE_URL = f'postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}'
 engine = create_engine(DATABASE_URL)
 
+"""Función para analizar transacciones y detectar patrones sospechosos."""
 def analyze_transactions():
-  """Función para analizar transacciones y detectar patrones sospechosos."""
   query = "SELECT * FROM transactions;"
   df = pd.read_sql(query, con=engine)
   
@@ -26,5 +26,17 @@ def analyze_transactions():
     print("Transacciones sospechosas:")
     print(suspicious_transactions)
 
+"""Función para preparar el conjunto de datos para entrenamiento."""
+def prepare_dataset():
+    query = "SELECT * FROM transactions;"
+    df = pd.read_sql(query, con=engine)
+    
+    df['is_fraud'] = 0
+    df.loc[df['amount'] < -5000, 'is_fraud'] = 1
+    df.loc[df['amount'] > 20000, 'is_fraud'] = 1
+    
+    return df
+
 if __name__ == '__main__':
-    analyze_transactions()
+    df = prepare_dataset()
+    print(df.sort_values(by=['is_fraud'], ascending=False).head())

@@ -1,5 +1,5 @@
 account_id,transaction_date,amount,transaction_type,description
-1,2024-01-15 10:30:00,1000,deposit,Salary payment
-1,2024-02-20 14:45:00,-500,withdrawal,ATM cash withdrawal
-2,2024-03-10 08:00:00,1500,deposit,Project payment
-2,2024-04-05 16:00:00,-300,withdrawal,Groceries
+1,2024-01-15 10:30:00,100000,deposit,Salary payment
+1,2024-02-20 14:45:00,-15000,withdrawal,ATM cash withdrawal
+2,2024-03-10 08:00:00,25000,deposit,Project payment
+2,2024-04-05 16:00:00,-6000,withdrawal,Groceries
