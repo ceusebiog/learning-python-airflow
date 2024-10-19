@@ -1,0 +1,501 @@
+account_id,transaction_date,amount,transaction_type,description
+2,2024-08-19 07:40:02,15763.18,deposit,Project payment
+1,2024-03-19 04:26:38,16952.8,deposit,Project payment
+1,2024-02-11 10:45:25,21332.08,deposit,Salary payment
+2,2024-06-25 20:11:30,24130.78,deposit,Salary payment
+2,2024-03-10 00:11:47,14570.4,deposit,Salary payment
+2,2024-06-24 01:25:24,-2018.92,withdrawal,Groceries
+1,2023-10-28 17:47:21,24659.15,deposit,Project payment
+2,2023-12-06 22:24:18,14187.34,deposit,Salary payment
+1,2024-02-01 13:59:21,-320.57,withdrawal,Groceries
+2,2023-10-30 22:07:44,21028.88,deposit,Project payment
+1,2024-06-22 16:58:12,14749.98,deposit,Salary payment
+2,2024-09-28 10:34:24,12045.14,deposit,Salary payment
+1,2024-07-22 06:11:03,14741.93,deposit,Project payment
+2,2023-12-01 16:55:10,-758.69,withdrawal,ATM cash withdrawal
+1,2024-04-23 13:29:06,14153.94,deposit,Salary payment
+1,2024-01-02 02:55:37,3729.98,deposit,Salary payment
+1,2024-07-29 10:54:39,11034.63,deposit,Salary payment
+1,2024-03-20 21:45:07,24685.59,deposit,Salary payment
+2,2024-05-29 15:46:33,24434.56,deposit,Project payment
+2,2023-10-18 03:01:37,11012.22,deposit,Salary payment
+1,2024-10-09 21:32:10,7905.72,deposit,Project payment
+2,2024-07-14 10:55:18,-4528.07,withdrawal,ATM cash withdrawal
+2,2024-02-01 19:50:55,7075.81,deposit,Project payment
+2,2024-07-27 00:13:39,891.52,deposit,Project payment
+1,2024-09-07 11:44:14,-4177.85,withdrawal,Groceries
+2,2023-12-24 02:25:33,14488.26,deposit,Salary payment
+2,2024-01-10 04:05:19,10525.5,deposit,Salary payment
+1,2024-07-12 00:33:25,22658.36,deposit,Salary payment
+1,2024-07-20 02:58:29,-2039.17,withdrawal,ATM cash withdrawal
+2,2024-09-26 22:53:00,10763.84,deposit,Salary payment
+2,2024-09-09 21:00:54,-2466.77,withdrawal,ATM cash withdrawal
+1,2024-05-11 11:10:27,17752.86,deposit,Project payment
+1,2024-05-29 19:16:07,6014.43,deposit,Project payment
+1,2024-01-29 08:58:26,21099.66,deposit,Salary payment
+2,2024-09-28 15:49:56,9006.03,deposit,Salary payment
+1,2024-05-27 06:27:55,-5601.23,withdrawal,ATM cash withdrawal
+2,2024-03-19 00:14:49,-6592.15,withdrawal,Groceries
+1,2024-10-07 01:06:25,12243.02,deposit,Project payment
+2,2024-04-19 01:28:58,24354.53,deposit,Salary payment
+1,2023-11-08 06:25:39,-2540.21,withdrawal,ATM cash withdrawal
+1,2024-02-02 04:51:12,-8513.41,withdrawal,ATM cash withdrawal
+2,2024-07-07 21:38:40,18792.91,deposit,Project payment
+2,2023-11-14 10:39:20,2512.15,deposit,Project payment
+1,2024-05-14 15:59:18,-7073.12,withdrawal,Groceries
+2,2024-02-24 10:24:29,7323.23,deposit,Salary payment
+2,2024-03-31 17:08:39,-3921.75,withdrawal,ATM cash withdrawal
+2,2024-09-08 13:49:19,-7270.84,withdrawal,Groceries
+2,2023-11-19 06:18:28,-369.96,withdrawal,ATM cash withdrawal
+1,2024-08-28 07:00:02,17459.75,deposit,Project payment
+2,2024-01-11 17:25:13,16492.97,deposit,Project payment
+1,2024-09-03 08:33:01,12237.53,deposit,Salary payment
+2,2023-12-24 15:15:41,1443.28,deposit,Salary payment
+2,2023-11-28 08:24:38,-761.5,withdrawal,Groceries
+1,2024-02-14 02:29:13,5550.19,deposit,Project payment
+2,2023-11-24 08:46:50,13433.27,deposit,Project payment
+1,2024-05-30 10:45:12,2364.41,deposit,Salary payment
+2,2024-08-18 11:54:47,1559.84,deposit,Project payment
+2,2024-06-04 01:16:51,11757.68,deposit,Salary payment
+1,2023-12-21 20:29:50,18180.66,deposit,Salary payment
+1,2024-09-22 10:51:31,914.78,deposit,Project payment
+2,2023-11-30 17:31:47,93.86,deposit,Project payment
+2,2024-02-22 23:43:14,5462.35,deposit,Salary payment
+2,2024-03-08 15:07:10,5957.5,deposit,Salary payment
+1,2023-11-12 09:20:39,19762.62,deposit,Salary payment
+2,2024-08-09 17:40:01,8449.05,deposit,Salary payment
+1,2024-02-27 06:04:34,-5822.36,withdrawal,Groceries
+1,2024-07-16 06:38:42,1345.91,deposit,Project payment
+2,2024-05-26 07:38:48,-3906.52,withdrawal,ATM cash withdrawal
+2,2024-03-19 01:23:33,-2833.98,withdrawal,Groceries
+1,2024-08-27 04:21:34,22744.02,deposit,Project payment
+1,2024-09-24 16:28:55,23936.22,deposit,Project payment
+1,2024-09-01 10:31:26,23349.1,deposit,Salary payment
+2,2024-04-26 07:46:39,6891.81,deposit,Salary payment
+2,2024-05-21 22:13:38,18126.89,deposit,Salary payment
+2,2024-09-22 02:27:56,-2413.35,withdrawal,ATM cash withdrawal
+1,2023-12-29 01:50:23,15346.99,deposit,Project payment
+1,2024-03-27 09:48:36,5622.72,deposit,Project payment
+1,2024-02-06 17:44:29,-2913.56,withdrawal,ATM cash withdrawal
+1,2024-04-01 16:46:58,24414.73,deposit,Salary payment
+2,2024-05-25 11:06:35,-1328.12,withdrawal,Groceries
+2,2024-03-20 15:16:56,17750.92,deposit,Salary payment
+2,2023-12-05 08:47:51,8370.01,deposit,Project payment
+1,2024-04-08 17:01:44,14596.85,deposit,Project payment
+1,2024-04-14 21:44:00,5454.92,deposit,Salary payment
+2,2024-06-12 06:53:02,13409.59,deposit,Project payment
+1,2023-12-07 13:02:52,23013.38,deposit,Salary payment
+2,2024-06-30 12:59:23,-1724.74,withdrawal,ATM cash withdrawal
+1,2024-06-06 15:43:09,7145.66,deposit,Project payment
+1,2024-05-01 21:18:10,4743.82,deposit,Project payment
+1,2023-10-26 14:04:38,-1612.34,withdrawal,ATM cash withdrawal
+2,2023-10-20 14:36:16,16100.63,deposit,Project payment
+1,2024-09-25 16:57:53,10832.7,deposit,Salary payment
+1,2023-11-17 11:33:07,5409.11,deposit,Project payment
+1,2024-10-05 08:48:30,-6089.86,withdrawal,ATM cash withdrawal
+2,2024-06-25 02:19:45,3752.21,deposit,Salary payment
+2,2023-11-30 06:23:25,-800.24,withdrawal,Groceries
+2,2024-05-11 22:19:13,1764.32,deposit,Salary payment
+1,2023-11-07 00:59:44,20350.25,deposit,Salary payment
+2,2024-05-14 17:08:19,8296.22,deposit,Salary payment
+2,2024-06-11 18:19:29,-9811.48,withdrawal,Groceries
+1,2024-09-18 03:28:30,20850.44,deposit,Salary payment
+1,2023-12-26 15:29:50,17998.55,deposit,Project payment
+2,2023-12-03 14:45:18,-8680.69,withdrawal,Groceries
+2,2024-06-10 09:33:44,6662.12,deposit,Project payment
+2,2023-11-25 18:31:00,-8414.65,withdrawal,ATM cash withdrawal
+2,2024-03-23 20:49:19,4519.96,deposit,Project payment
+1,2024-10-08 09:23:30,5927.56,deposit,Salary payment
+2,2023-11-30 09:02:53,9811.09,deposit,Salary payment
+2,2024-03-13 11:04:18,10903.23,deposit,Salary payment
+2,2024-07-04 23:59:01,-8252.77,withdrawal,ATM cash withdrawal
+2,2024-08-07 09:55:31,-4627.59,withdrawal,Groceries
+2,2024-08-13 14:33:10,82.3,deposit,Project payment
+2,2024-04-27 02:49:54,16642.07,deposit,Project payment
+2,2024-09-17 21:51:32,22472.66,deposit,Project payment
+2,2023-10-29 07:13:39,20441.33,deposit,Project payment
+2,2023-11-07 15:48:29,-6868.5,withdrawal,Groceries
+2,2023-12-17 08:07:07,2293.96,deposit,Project payment
+1,2024-03-11 23:24:15,-34.57,withdrawal,Groceries
+2,2024-06-06 13:17:20,22369.03,deposit,Salary payment
+2,2023-11-29 17:15:01,6933.47,deposit,Project payment
+1,2024-05-21 10:08:14,16155.41,deposit,Salary payment
+2,2023-11-02 11:42:56,2310.29,deposit,Salary payment
+2,2024-03-13 07:07:49,14112.71,deposit,Project payment
+1,2023-12-29 22:58:44,753.6,deposit,Salary payment
+2,2023-12-24 11:00:40,17807.14,deposit,Salary payment
+2,2023-12-26 10:31:43,-9567.05,withdrawal,Groceries
+2,2024-05-28 01:29:11,12936.01,deposit,Salary payment
+2,2023-11-06 21:51:55,-7096.58,withdrawal,Groceries
+1,2024-10-01 06:47:02,-8050.42,withdrawal,Groceries
+2,2023-12-19 03:54:36,2293.29,deposit,Salary payment
+1,2024-08-28 11:03:43,18967.54,deposit,Salary payment
+2,2024-04-21 10:51:35,-1665.6,withdrawal,ATM cash withdrawal
+1,2024-03-16 09:10:50,1252.55,deposit,Salary payment
+1,2024-08-13 23:48:24,22176.35,deposit,Project payment
+2,2023-11-08 07:17:32,15113.74,deposit,Salary payment
+1,2023-12-13 19:18:28,24304.26,deposit,Project payment
+1,2023-11-17 08:36:14,2195.76,deposit,Salary payment
+1,2024-09-08 18:22:11,20934.58,deposit,Salary payment
+1,2024-04-07 18:28:07,-6701.68,withdrawal,ATM cash withdrawal
+1,2024-10-11 15:09:48,13748.6,deposit,Project payment
+2,2024-04-28 05:57:28,9430.34,deposit,Project payment
+2,2024-02-19 00:04:57,-3894.67,withdrawal,Groceries
+2,2024-02-03 20:45:14,11705.75,deposit,Salary payment
+1,2024-01-22 08:51:33,13809.89,deposit,Salary payment
+2,2024-02-13 03:47:15,16007.54,deposit,Salary payment
+2,2024-04-22 02:17:24,11431.76,deposit,Salary payment
+1,2024-01-09 03:37:13,9495.79,deposit,Salary payment
+2,2024-05-02 00:49:45,7797.19,deposit,Project payment
+1,2024-05-03 17:46:19,-4152.34,withdrawal,ATM cash withdrawal
+2,2024-04-22 15:58:10,565.48,deposit,Project payment
+1,2024-07-16 03:18:54,19759.14,deposit,Salary payment
+2,2024-09-17 01:25:42,2542.93,deposit,Salary payment
+1,2024-05-05 15:39:17,10011.43,deposit,Salary payment
+1,2024-08-16 17:41:47,23093.63,deposit,Project payment
+1,2024-02-19 14:59:42,12081.14,deposit,Project payment
+1,2023-12-09 05:46:21,18177.0,deposit,Salary payment
+1,2023-12-20 23:43:04,-8626.04,withdrawal,Groceries
+2,2023-10-26 00:52:05,17325.87,deposit,Salary payment
+1,2023-11-10 04:00:48,18640.51,deposit,Salary payment
+1,2024-06-29 05:16:39,-2192.41,withdrawal,ATM cash withdrawal
+1,2024-06-22 17:03:17,-3957.21,withdrawal,Groceries
+2,2024-06-21 01:57:34,22860.6,deposit,Project payment
+2,2024-10-12 10:07:00,1199.08,deposit,Project payment
+2,2023-11-08 01:24:59,130.92,deposit,Salary payment
+2,2024-03-30 09:18:07,14497.22,deposit,Project payment
+2,2023-10-18 04:13:47,9337.86,deposit,Salary payment
+2,2024-06-27 05:04:52,6378.71,deposit,Project payment
+2,2024-02-08 00:47:30,10081.3,deposit,Project payment
+2,2023-12-22 03:49:52,17564.64,deposit,Project payment
+1,2024-08-23 08:42:49,9225.72,deposit,Salary payment
+2,2024-08-06 20:52:29,-5463.51,withdrawal,Groceries
+2,2024-08-31 20:19:05,-3043.21,withdrawal,Groceries
+2,2024-08-31 19:53:26,5591.93,deposit,Salary payment
+1,2023-11-21 11:58:43,5563.53,deposit,Project payment
+1,2023-12-24 21:00:15,1381.58,deposit,Salary payment
+1,2024-07-12 05:33:53,23441.57,deposit,Salary payment
+2,2023-11-13 11:19:45,-1788.74,withdrawal,ATM cash withdrawal
+2,2023-11-08 23:49:41,-6588.12,withdrawal,Groceries
+2,2024-08-19 11:44:11,-7547.05,withdrawal,Groceries
+1,2023-11-14 15:29:52,8203.37,deposit,Project payment
+1,2024-10-02 13:39:14,16439.64,deposit,Salary payment
+2,2024-04-01 17:48:44,21111.44,deposit,Project payment
+2,2023-12-04 15:02:19,649.26,deposit,Salary payment
+2,2024-01-27 17:46:32,-923.18,withdrawal,Groceries
+1,2024-01-15 09:05:12,-8388.61,withdrawal,Groceries
+1,2024-02-11 02:20:46,2276.11,deposit,Salary payment
+1,2024-09-07 04:49:16,-1378.2,withdrawal,Groceries
+1,2024-08-24 14:08:34,19765.9,deposit,Salary payment
+2,2023-11-11 14:15:37,6682.13,deposit,Project payment
+2,2024-05-12 14:12:29,-6201.05,withdrawal,Groceries
+2,2024-05-08 12:13:04,-7921.32,withdrawal,ATM cash withdrawal
+1,2024-01-05 10:21:36,-7705.26,withdrawal,ATM cash withdrawal
+1,2024-05-26 10:26:05,10591.66,deposit,Project payment
+1,2024-09-30 19:19:54,-8092.06,withdrawal,ATM cash withdrawal
+2,2024-04-05 00:14:20,5472.37,deposit,Project payment
+2,2024-04-02 20:46:40,90.38,deposit,Salary payment
+1,2023-12-23 18:13:26,-4984.56,withdrawal,Groceries
+1,2024-05-03 06:51:33,-2854.48,withdrawal,ATM cash withdrawal
+2,2024-07-14 17:40:14,5541.15,deposit,Project payment
+2,2024-01-08 21:32:30,6341.25,deposit,Salary payment
+2,2024-01-16 12:24:43,15337.69,deposit,Project payment
+1,2024-06-22 09:54:17,-3585.95,withdrawal,ATM cash withdrawal
+1,2023-12-13 08:36:43,20667.28,deposit,Project payment
+1,2024-01-26 20:53:18,-2254.01,withdrawal,ATM cash withdrawal
+1,2024-01-07 15:14:55,7798.9,deposit,Project payment
+2,2024-10-13 20:32:57,-8549.45,withdrawal,ATM cash withdrawal
+2,2023-10-18 23:51:03,20302.44,deposit,Salary payment
+2,2024-01-08 11:16:22,16344.24,deposit,Project payment
+1,2024-10-05 04:07:47,7664.11,deposit,Project payment
+1,2024-06-25 00:16:22,23930.88,deposit,Salary payment
+1,2024-09-21 22:40:08,491.83,deposit,Salary payment
+1,2023-11-13 09:31:39,23313.77,deposit,Salary payment
+2,2024-06-10 12:52:29,10593.51,deposit,Salary payment
+2,2024-05-07 01:43:12,10572.93,deposit,Salary payment
+1,2024-09-26 11:19:29,23392.07,deposit,Project payment
+2,2024-05-29 09:12:53,12204.29,deposit,Salary payment
+1,2024-07-26 01:42:24,22695.79,deposit,Project payment
+2,2023-12-17 04:02:04,18622.81,deposit,Project payment
+1,2024-10-09 08:09:34,-923.48,withdrawal,ATM cash withdrawal
+1,2023-10-22 22:01:46,2524.17,deposit,Project payment
+1,2024-02-07 05:24:34,17597.85,deposit,Salary payment
+2,2024-10-16 19:06:13,-8816.49,withdrawal,Groceries
+2,2023-11-06 06:33:05,-7462.89,withdrawal,ATM cash withdrawal
+2,2023-11-05 17:41:45,10506.15,deposit,Salary payment
+1,2024-05-28 18:30:13,-16.34,withdrawal,ATM cash withdrawal
+1,2024-07-31 10:38:56,15607.36,deposit,Project payment
+1,2024-03-23 12:26:58,23507.96,deposit,Salary payment
+1,2024-07-13 23:53:58,9871.47,deposit,Project payment
+2,2023-11-23 14:07:40,-1343.2,withdrawal,ATM cash withdrawal
+2,2023-11-06 12:41:14,435.04,deposit,Salary payment
+2,2023-10-21 04:39:21,-6021.98,withdrawal,Groceries
+1,2024-08-07 16:14:38,6843.5,deposit,Project payment
+1,2024-09-25 02:58:11,12602.07,deposit,Project payment
+1,2023-10-22 09:22:13,-4755.44,withdrawal,ATM cash withdrawal
+2,2024-09-30 21:20:08,8972.09,deposit,Project payment
+2,2024-08-11 21:20:18,-5956.46,withdrawal,ATM cash withdrawal
+1,2024-06-07 03:08:14,8880.83,deposit,Project payment
+2,2023-12-27 01:47:36,-3166.59,withdrawal,Groceries
+1,2024-06-10 02:27:50,3208.11,deposit,Project payment
+1,2024-06-07 21:31:24,23911.05,deposit,Project payment
+1,2024-04-28 11:14:50,1321.28,deposit,Salary payment
+1,2023-11-30 13:17:48,15586.53,deposit,Project payment
+2,2024-10-01 01:04:48,3537.57,deposit,Project payment
+1,2024-02-11 05:46:48,9836.42,deposit,Project payment
+2,2024-03-14 14:30:50,2063.33,deposit,Project payment
+2,2024-01-30 02:34:02,-135.49,withdrawal,ATM cash withdrawal
+2,2024-02-02 16:03:50,-8707.96,withdrawal,ATM cash withdrawal
+2,2024-05-29 07:10:03,21060.19,deposit,Project payment
+1,2024-07-21 08:41:45,-1257.32,withdrawal,ATM cash withdrawal
+2,2024-01-13 01:38:48,-4003.19,withdrawal,Groceries
+2,2024-06-02 05:26:37,16832.32,deposit,Project payment
+1,2024-03-18 07:19:32,15795.07,deposit,Project payment
+2,2024-04-03 19:20:19,9631.18,deposit,Salary payment
+1,2024-07-14 18:19:50,22387.61,deposit,Project payment
+2,2024-03-03 19:52:37,13400.57,deposit,Salary payment
+1,2024-04-17 19:22:02,14455.07,deposit,Project payment
+1,2024-06-18 07:44:27,-2672.14,withdrawal,Groceries
+1,2024-07-24 22:41:13,15149.37,deposit,Project payment
+1,2024-03-10 13:43:03,11864.76,deposit,Salary payment
+1,2024-05-10 12:26:03,12976.55,deposit,Project payment
+1,2023-11-18 17:37:11,17608.14,deposit,Project payment
+1,2024-09-01 09:08:15,20235.36,deposit,Project payment
+2,2024-06-03 07:07:04,2800.81,deposit,Salary payment
+1,2024-10-01 08:44:20,-4508.43,withdrawal,ATM cash withdrawal
+2,2024-05-28 19:49:54,18738.31,deposit,Salary payment
+1,2024-08-26 07:31:13,17804.0,deposit,Salary payment
+2,2024-03-01 02:00:09,7721.17,deposit,Project payment
+1,2023-12-17 02:18:25,4257.9,deposit,Project payment
+2,2024-05-06 02:23:58,8586.73,deposit,Salary payment
+1,2024-05-26 14:39:24,1725.88,deposit,Salary payment
+2,2023-12-09 03:13:29,1591.71,deposit,Salary payment
+2,2024-01-17 05:33:57,4248.02,deposit,Project payment
+1,2024-05-13 01:08:54,-8015.28,withdrawal,Groceries
+2,2024-03-27 10:48:30,17814.68,deposit,Project payment
+2,2024-01-10 01:19:52,10478.36,deposit,Salary payment
+1,2024-06-11 06:16:25,-3863.78,withdrawal,ATM cash withdrawal
+2,2024-07-11 22:09:57,8992.53,deposit,Salary payment
+2,2023-11-02 15:26:47,9575.31,deposit,Salary payment
+1,2024-06-22 05:50:15,10402.85,deposit,Project payment
+1,2024-01-11 04:55:11,-1311.44,withdrawal,Groceries
+1,2024-09-03 05:41:51,12926.89,deposit,Salary payment
+1,2024-03-26 13:24:06,10744.2,deposit,Salary payment
+2,2024-08-16 01:31:09,4914.61,deposit,Project payment
+2,2023-12-25 11:16:45,11342.45,deposit,Project payment
+2,2024-05-16 19:03:27,8456.29,deposit,Project payment
+1,2023-11-09 22:21:04,7630.41,deposit,Salary payment
+2,2024-04-01 07:34:15,1998.3,deposit,Project payment
+2,2024-04-25 05:51:52,1657.94,deposit,Project payment
+1,2024-08-13 11:04:32,3040.94,deposit,Project payment
+1,2024-01-04 00:09:21,-6988.72,withdrawal,Groceries
+1,2024-02-21 08:23:58,4613.13,deposit,Salary payment
+1,2024-09-17 07:38:06,1996.26,deposit,Project payment
+1,2024-08-21 12:40:37,2525.1,deposit,Salary payment
+1,2023-12-31 22:13:36,24432.78,deposit,Salary payment
+2,2024-02-28 12:20:13,-1696.84,withdrawal,Groceries
+1,2024-05-26 15:39:54,-13.61,withdrawal,ATM cash withdrawal
+2,2024-02-17 04:55:52,14526.09,deposit,Project payment
+2,2024-01-27 23:12:32,-3862.48,withdrawal,Groceries
+2,2024-07-23 12:40:10,-9639.23,withdrawal,ATM cash withdrawal
+2,2023-12-25 08:10:03,24835.31,deposit,Project payment
+2,2024-03-22 17:14:36,5382.79,deposit,Salary payment
+2,2024-07-19 21:58:06,18822.38,deposit,Project payment
+1,2024-05-19 04:54:30,7102.27,deposit,Salary payment
+2,2024-03-13 16:09:06,-8331.91,withdrawal,ATM cash withdrawal
+2,2024-10-16 03:49:32,16836.88,deposit,Salary payment
+2,2024-04-02 06:22:55,9661.53,deposit,Project payment
+2,2024-02-12 02:35:31,2284.37,deposit,Project payment
+1,2024-03-20 15:54:32,6796.81,deposit,Project payment
+1,2024-06-12 07:01:12,24306.62,deposit,Project payment
+2,2024-05-03 11:35:56,18142.37,deposit,Project payment
+1,2024-07-20 04:33:48,-5469.71,withdrawal,ATM cash withdrawal
+1,2023-12-17 23:29:28,6080.72,deposit,Project payment
+1,2023-10-26 05:32:00,-8526.38,withdrawal,Groceries
+2,2023-10-31 05:56:54,6992.54,deposit,Salary payment
+1,2024-06-21 08:17:19,-1296.93,withdrawal,Groceries
+1,2023-12-01 22:45:56,11268.86,deposit,Salary payment
+1,2024-10-01 00:16:24,9476.5,deposit,Salary payment
+2,2024-05-16 16:27:20,-4243.26,withdrawal,ATM cash withdrawal
+1,2024-07-28 04:12:37,11284.15,deposit,Salary payment
+2,2023-12-21 08:04:45,11913.42,deposit,Salary payment
+2,2024-02-23 22:18:37,17413.82,deposit,Salary payment
+1,2024-01-24 03:00:34,14720.62,deposit,Salary payment
+1,2024-06-01 08:44:13,5409.14,deposit,Salary payment
+2,2024-03-10 21:57:19,-3537.57,withdrawal,Groceries
+2,2024-06-12 13:03:32,2019.21,deposit,Salary payment
+2,2023-10-29 12:25:34,20376.51,deposit,Salary payment
+1,2024-10-07 08:54:52,19346.16,deposit,Salary payment
+1,2024-10-09 09:35:00,21859.79,deposit,Salary payment
+1,2023-10-28 10:52:43,13962.01,deposit,Project payment
+1,2024-01-11 05:09:27,3979.73,deposit,Salary payment
+2,2024-07-21 18:23:06,21656.36,deposit,Salary payment
+1,2024-07-03 08:50:44,-1984.22,withdrawal,Groceries
+1,2024-06-08 09:29:46,13833.55,deposit,Project payment
+2,2024-07-19 23:11:42,2811.17,deposit,Project payment
+2,2023-10-23 00:44:31,21535.31,deposit,Project payment
+1,2024-01-05 01:48:10,13577.54,deposit,Salary payment
+2,2024-01-10 17:58:05,-2338.52,withdrawal,Groceries
+2,2024-01-19 17:04:15,4982.69,deposit,Salary payment
+1,2024-04-23 00:55:15,-2907.14,withdrawal,ATM cash withdrawal
+2,2023-11-05 16:00:59,8159.75,deposit,Project payment
+1,2024-02-26 08:32:09,24465.68,deposit,Salary payment
+2,2024-04-01 05:34:30,-8095.59,withdrawal,Groceries
+2,2024-02-29 00:40:05,5321.69,deposit,Salary payment
+1,2023-12-06 20:34:37,17632.38,deposit,Project payment
+2,2024-09-02 21:50:41,-6266.41,withdrawal,Groceries
+2,2024-06-15 12:48:08,6110.81,deposit,Salary payment
+2,2024-06-03 11:35:38,9691.82,deposit,Project payment
+2,2024-01-18 11:18:37,5925.36,deposit,Salary payment
+1,2024-06-27 18:55:13,12151.25,deposit,Salary payment
+1,2024-02-28 01:18:06,9621.35,deposit,Project payment
+1,2024-06-20 22:00:40,17135.46,deposit,Salary payment
+2,2024-09-23 19:16:02,18969.85,deposit,Project payment
+2,2024-02-06 12:49:38,8948.51,deposit,Project payment
+1,2024-06-19 10:57:09,2530.22,deposit,Salary payment
+2,2024-08-24 06:00:59,1545.86,deposit,Salary payment
+1,2024-08-30 04:41:14,23288.83,deposit,Project payment
+1,2024-07-31 04:20:56,8181.52,deposit,Project payment
+1,2024-05-14 09:48:21,5910.05,deposit,Project payment
+2,2024-04-28 02:49:06,15906.68,deposit,Project payment
+2,2024-07-04 18:48:41,14319.01,deposit,Project payment
+2,2024-06-26 19:57:15,17161.17,deposit,Project payment
+1,2024-09-30 07:58:37,8476.75,deposit,Project payment
+2,2024-01-06 13:37:44,24972.44,deposit,Project payment
+2,2024-04-26 00:59:31,4294.8,deposit,Salary payment
+2,2024-01-09 03:47:04,16094.75,deposit,Salary payment
+2,2024-06-10 17:32:53,13167.71,deposit,Project payment
+2,2023-12-15 19:59:40,-3202.09,withdrawal,ATM cash withdrawal
+2,2023-12-11 10:43:35,4427.52,deposit,Project payment
+2,2024-08-23 21:46:17,-5723.57,withdrawal,ATM cash withdrawal
+1,2024-08-26 02:45:19,5495.91,deposit,Salary payment
+1,2024-02-22 05:59:20,22621.68,deposit,Project payment
+2,2024-02-06 19:14:52,15453.54,deposit,Salary payment
+1,2023-11-26 04:36:53,389.65,deposit,Salary payment
+1,2024-08-17 21:27:52,-2315.29,withdrawal,Groceries
+2,2024-02-29 14:14:18,20836.88,deposit,Project payment
+2,2024-10-01 08:07:21,-1792.39,withdrawal,ATM cash withdrawal
+1,2024-04-12 07:34:44,4564.82,deposit,Salary payment
+1,2024-06-07 15:56:26,-5299.72,withdrawal,ATM cash withdrawal
+2,2024-10-04 23:52:06,15758.28,deposit,Project payment
+1,2024-09-09 01:24:04,6289.87,deposit,Project payment
+2,2024-02-11 08:33:31,6014.39,deposit,Salary payment
+1,2024-04-24 05:37:55,21060.95,deposit,Project payment
+1,2024-05-24 22:53:48,-5074.51,withdrawal,ATM cash withdrawal
+1,2023-11-03 09:24:27,593.73,deposit,Salary payment
+2,2023-10-27 21:52:58,4367.86,deposit,Salary payment
+2,2024-08-03 08:05:22,22196.81,deposit,Salary payment
+1,2024-02-29 22:08:45,-1465.69,withdrawal,Groceries
+2,2024-02-24 07:02:02,15292.65,deposit,Salary payment
+2,2024-03-07 00:06:20,16496.13,deposit,Project payment
+2,2024-06-08 17:30:55,-1441.33,withdrawal,Groceries
+1,2023-11-13 08:25:55,4367.12,deposit,Salary payment
+1,2023-12-12 14:52:49,10638.22,deposit,Project payment
+1,2023-12-10 01:44:44,726.66,deposit,Project payment
+1,2023-12-24 11:14:11,8032.87,deposit,Project payment
+1,2024-03-02 08:01:25,-5142.5,withdrawal,Groceries
+1,2023-10-26 19:39:37,19829.7,deposit,Salary payment
+2,2024-04-27 01:26:04,8875.79,deposit,Project payment
+2,2024-06-22 19:45:38,24017.86,deposit,Salary payment
+2,2023-10-27 17:51:28,12139.14,deposit,Salary payment
+2,2024-05-31 10:30:59,7152.43,deposit,Project payment
+2,2024-05-14 01:13:29,23113.16,deposit,Project payment
+2,2024-08-13 06:55:37,15390.06,deposit,Salary payment
+2,2024-02-16 07:49:14,-5496.69,withdrawal,ATM cash withdrawal
+1,2024-08-14 20:12:35,2442.66,deposit,Salary payment
+1,2024-03-16 14:03:18,18551.52,deposit,Salary payment
+1,2024-01-10 09:14:27,-9436.85,withdrawal,Groceries
+2,2024-01-04 01:30:27,-2386.07,withdrawal,Groceries
+1,2023-12-05 11:34:33,6736.01,deposit,Project payment
+2,2024-02-09 18:33:49,2502.6,deposit,Project payment
+1,2024-01-30 22:23:30,8716.01,deposit,Project payment
+2,2024-03-02 09:41:28,11333.96,deposit,Salary payment
+2,2024-06-01 23:00:13,7482.87,deposit,Salary payment
+1,2024-04-11 14:41:19,-1347.51,withdrawal,Groceries
+1,2024-02-29 02:30:27,16225.18,deposit,Project payment
+2,2024-07-05 06:59:24,14410.25,deposit,Project payment
+2,2024-05-28 08:40:46,6730.35,deposit,Salary payment
+2,2024-01-18 06:00:40,1460.6,deposit,Salary payment
+1,2024-09-20 01:09:23,-3504.27,withdrawal,ATM cash withdrawal
+2,2024-01-04 20:39:24,21838.1,deposit,Project payment
+1,2023-11-27 15:43:55,965.2,deposit,Project payment
+2,2024-07-02 05:17:21,22754.13,deposit,Salary payment
+1,2024-02-21 05:39:19,11473.55,deposit,Salary payment
+2,2023-11-06 23:50:52,-2192.33,withdrawal,Groceries
+1,2023-11-18 15:08:24,218.85,deposit,Salary payment
+1,2024-08-29 07:23:12,10540.18,deposit,Salary payment
+1,2024-02-12 08:45:30,4243.12,deposit,Salary payment
+2,2024-04-10 21:35:11,-6057.47,withdrawal,Groceries
+1,2024-08-01 00:25:19,7415.9,deposit,Salary payment
+1,2023-11-25 18:19:09,1346.85,deposit,Salary payment
+1,2023-12-20 13:02:18,9887.39,deposit,Salary payment
+1,2024-04-10 02:39:56,11433.16,deposit,Salary payment
+1,2024-10-10 04:43:47,4268.98,deposit,Project payment
+1,2024-01-23 18:02:16,20717.36,deposit,Project payment
+2,2024-07-25 06:32:08,6931.48,deposit,Salary payment
+1,2024-07-22 13:27:00,-2873.03,withdrawal,Groceries
+1,2024-07-30 23:57:57,10383.05,deposit,Project payment
+1,2024-09-05 10:03:26,9319.17,deposit,Project payment
+2,2023-12-12 18:15:05,17274.72,deposit,Salary payment
+2,2024-08-17 13:28:42,10806.12,deposit,Project payment
+1,2023-12-12 16:48:32,-303.9,withdrawal,Groceries
+2,2024-06-21 23:03:04,-9420.28,withdrawal,ATM cash withdrawal
+1,2024-07-13 00:39:13,1770.19,deposit,Project payment
+1,2024-05-16 00:40:52,10234.01,deposit,Project payment
+1,2024-07-05 13:46:26,-2586.21,withdrawal,Groceries
+2,2024-06-28 15:04:04,20965.18,deposit,Project payment
+1,2024-10-08 04:21:00,17160.13,deposit,Salary payment
+2,2024-03-22 20:34:25,10983.02,deposit,Project payment
+1,2024-10-14 18:54:33,2389.05,deposit,Project payment
+1,2024-07-29 05:51:31,4067.05,deposit,Salary payment
+2,2024-07-13 20:03:29,-3278.88,withdrawal,ATM cash withdrawal
+1,2024-08-01 14:41:16,5887.79,deposit,Salary payment
+2,2024-09-14 05:03:02,-8303.75,withdrawal,ATM cash withdrawal
+1,2024-08-19 13:16:44,19952.82,deposit,Project payment
+1,2023-11-19 18:54:27,17132.85,deposit,Project payment
+1,2024-09-20 09:10:17,-4994.87,withdrawal,ATM cash withdrawal
+1,2023-10-31 13:06:15,-9150.24,withdrawal,Groceries
+2,2024-04-23 03:55:25,20607.74,deposit,Project payment
+2,2024-08-30 19:36:26,22528.76,deposit,Project payment
+1,2024-08-12 07:47:13,16068.7,deposit,Salary payment
+2,2024-06-26 14:23:47,-6232.96,withdrawal,ATM cash withdrawal
+1,2024-05-13 17:09:44,23901.03,deposit,Project payment
+2,2024-07-04 04:49:22,-6786.07,withdrawal,Groceries
+1,2024-07-21 11:44:30,22750.98,deposit,Project payment
+1,2024-02-17 02:19:17,8770.48,deposit,Project payment
+1,2024-07-05 22:17:30,21903.48,deposit,Project payment
+2,2024-05-02 14:09:39,-2046.35,withdrawal,Groceries
+2,2024-01-15 22:33:08,11137.89,deposit,Project payment
+1,2024-05-01 07:37:01,20968.88,deposit,Salary payment
+2,2024-10-02 02:53:46,20034.27,deposit,Project payment
+2,2024-03-31 11:31:35,1421.43,deposit,Salary payment
+1,2024-07-22 06:06:15,13190.84,deposit,Salary payment
+1,2023-10-29 02:54:58,22021.44,deposit,Project payment
+2,2024-05-29 00:31:25,24721.83,deposit,Project payment
+2,2023-12-28 20:10:10,7478.32,deposit,Salary payment
+2,2024-05-23 01:26:40,-1998.29,withdrawal,ATM cash withdrawal
+1,2024-01-02 22:52:24,21510.02,deposit,Salary payment
+2,2024-03-24 05:23:11,-3035.22,withdrawal,Groceries
+1,2024-09-14 11:04:42,-394.02,withdrawal,Groceries
+1,2024-09-05 14:20:31,2184.52,deposit,Salary payment
+1,2024-04-22 08:00:49,-8676.27,withdrawal,Groceries
+1,2023-10-31 20:08:34,-9500.07,withdrawal,ATM cash withdrawal
+1,2024-09-06 04:20:28,-2640.47,withdrawal,Groceries
+2,2023-11-08 04:58:39,13200.93,deposit,Salary payment
+2,2024-05-12 16:20:28,14774.38,deposit,Project payment
+2,2024-03-17 00:14:37,17380.82,deposit,Salary payment
+1,2024-06-22 23:21:44,19115.85,deposit,Salary payment
+1,2024-08-14 14:00:49,24683.12,deposit,Project payment
+1,2024-04-28 21:13:00,2702.38,deposit,Project payment
+2,2024-01-15 00:00:31,4786.09,deposit,Salary payment
+2,2024-03-29 15:46:41,13887.71,deposit,Salary payment
+2,2023-12-03 03:06:17,1575.01,deposit,Project payment
+1,2024-08-17 12:21:09,8070.61,deposit,Project payment
+2,2023-10-21 06:35:34,7928.48,deposit,Salary payment
+1,2024-08-23 19:02:16,3481.95,deposit,Salary payment
+2,2024-05-20 14:46:40,20995.66,deposit,Salary payment
+2,2024-03-19 15:55:15,14333.55,deposit,Salary payment
+2,2024-08-21 14:46:53,22573.4,deposit,Project payment
+1,2024-04-16 13:52:04,8503.2,deposit,Project payment
+1,2024-09-29 23:31:49,6684.74,deposit,Project payment
+1,2023-10-20 02:25:40,1199.41,deposit,Project payment
