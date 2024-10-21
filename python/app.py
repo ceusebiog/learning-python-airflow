@@ -9,7 +9,6 @@ DB_HOST = os.getenv('POSTGRES_HOST', 'postgres')
 DB_PORT = os.getenv('POSTGRES_PORT', '5432')
 
 DATABASE_URL = f'postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}'
-print(DATABASE_URL)
 engine = create_engine(DATABASE_URL)
 
 def extract_data(file_path):

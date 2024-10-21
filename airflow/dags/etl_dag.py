@@ -27,7 +27,7 @@ def load_data(df, table_name):
     df.to_sql(table_name, con=engine, if_exists='append', index=False)
 
 def etl_process():
-    file_path = '/usr/local/airflow/dags/transactions.csv'  # Cambiar la ruta si es necesario
+    file_path = '/opt/airflow/dags/transactions.csv'  # Cambiar la ruta si es necesario
     data = extract_data(file_path)
     transformed_data = transform_data(data)
     load_data(transformed_data, 'transactions')
